@@ -16,15 +16,15 @@ const Message = (props: MessagePropsType) => {
                      id={'hw1-avatar-' + props.message.id}/>
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
-                        {'Ivan'}
+                        {props.message.user.name}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-                        {'I am going forward!'}
+                        {props.message.message.text}
                     </pre>
                 </div>
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
-                {'20:00'}
+                {props.message.message.time}
             </div>
         </div>
     )
