@@ -26,6 +26,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     } // деструктуризация пропсов
 ) => {
     const inputClass = error ? s.errorInput : s.input // need to fix with (?:)
+    const inputClassForTest = error ? "errorInput" : "input" // need to fix with (?:)
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
@@ -42,7 +43,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                         id={'hw3-input'}
                         value={name}
                         onChange={setNameCallback}
-                        className={s.inputClass + " " + inputClass}
+                        className={s.inputClass + " " + inputClass + " " + inputClassForTest}
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />
