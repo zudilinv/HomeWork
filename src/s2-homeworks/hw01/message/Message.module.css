@@ -10,11 +10,7 @@
 .imageAndText {
     display: flex;
     flex-direction: row-reverse;
-    width: 0;
-    height: 0;
-    border-bottom: 15px solid #0066CC;
-    border-right: 15px solid transparent;
-    align-items: end;
+
 }
 
 .imageAndText img {
@@ -39,8 +35,15 @@
     box-sizing: border-box;
 }
 
-.text::after {
-
+.text:after {
+    content: "";
+    margin-right: -20px;
+    margin-bottom: -8px;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #0066CC;
+    border-right: 15px solid transparent;
+    align-items: end;
 }
 
 .name {
@@ -57,6 +60,10 @@
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+
+}
+.messageText:after {
+
 }
 
 .time {

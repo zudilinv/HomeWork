@@ -24,7 +24,7 @@ margin-bottom: auto;
     width: 120px;
     height: 40px;
     border-radius: 20px;
-    background-color: #0066CC;
+    background-color: #5a99d9;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
@@ -36,7 +36,7 @@ margin-bottom: auto;
 }
 
 .button:hover {
-
+    background-color: #0066CC;
 }
 .button:active {
 

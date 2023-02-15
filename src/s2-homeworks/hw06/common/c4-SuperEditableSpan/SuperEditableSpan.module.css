@@ -1,11 +1,18 @@
 .spanBlock {
+    margin-top: 50px;
 }
 
 .span {
+    color: #0080FF;
+    cursor: pointer;
 }
 
-.input {
+.input:focus  {
+    outline: none;
 }
-
+.textarea:focus, input:focus {
+    outline: none;
+}
 .pen {
+    margin-right: 20px;
 }

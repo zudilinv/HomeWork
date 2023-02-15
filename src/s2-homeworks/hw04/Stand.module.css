@@ -22,28 +22,8 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
+    margin-right: 40px;
 }
-/*.input1 {*/
-/*    width: 372px;*/
-/*    height: 36px;*/
-/*    border: 1px solid #D1D1D1;*/
-/*    border-radius: 5px;*/
-
-/*}*/
-/*.input2 {*/
-/*    width: 372px;*/
-/*    height: 36px;*/
-/*    border: 1px solid #D1D1D1;*/
-/*    border-radius: 5px;*/
-
-/*}*/
-/*.errorInput {*/
-/*    width: 372px;*/
-/*    height: 36px;*/
-/*    border: 1px solid #CC1439;*/
-/*    border-radius: 5px;*/
-/*}*/
-/*-------------------------------------------------*/
 .button {
     overflow: hidden;
     padding: 5px 24px;
@@ -72,16 +52,8 @@
     border-radius: 3px;
 }
 
-.default {
-    background: green;
-}
-
 .red {
     background: #cc1439;
-}
-
-.default:hover {
-    background: greenyellow;
 }
 
 .red:hover {

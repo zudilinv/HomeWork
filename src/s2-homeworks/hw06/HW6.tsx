@@ -14,12 +14,19 @@ import s from './HW6.module.css'
 const HW6 = () => {
     const [value, setValue] = useState<string>('')
 
+// сохраняем объект типа StateType в ячейке 'test'
+//     saveState<StateType>('test', { x: 'A', y: 1 })
+
+// получаем в переменную state объект из ячейки 'test' или дэфолтный объект если ячейка пуста
+//     const state: StateType = restoreState<StateType>('test', { x: '', y: 0 })
+
+
+
     const save = () => {
         saveState<string>('hw6-editable-span-value', value)
     }
     const restore = () => {
-        // делают студенты
-
+       setValue(restoreState<string>('hw6-editable-span-value', ''))
     }
 
     return (
@@ -41,7 +48,7 @@ const HW6 = () => {
                 </div>
 
                 <div className={s.buttonsContainer}>
-                    <SuperButton id={'hw6-save'} onClick={save}>
+                    <SuperButton id={'hw6-save'} onClick={save} className={s.btn}>
                         Save to ls
                     </SuperButton>
                     <SuperButton
