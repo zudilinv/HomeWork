@@ -1,15 +1,23 @@
 .radio {
-}
+ display: flex;
 
+}
+.radio:hover {
+
+}
 .radio::before {
+
 }
 
 
 .radio:checked::before {
+    border: 2px solid black;
 }
 
 .label {
+cursor: pointer;
 }
 
 .options {
+    margin-left: 400px;
 }
