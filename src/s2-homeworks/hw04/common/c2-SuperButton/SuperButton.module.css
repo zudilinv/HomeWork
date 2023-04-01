@@ -40,18 +40,14 @@
 
 .default:hover {
     background: #0066CC;
-    width: 167px;
-
 }
 
 .red:hover {
     background: #ff1a47;
-    width: 167px;
 }
 
 .secondary:hover {
     background: #E5F0FA;
-    width: 167px;
 }
 
 
