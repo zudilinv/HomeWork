@@ -49,6 +49,7 @@ function Clock() {
 
     const onDisabled = !!timerId
     const unDisabled = !timerId
+
     console.log(timerId)
     return (
         <div className={s.clock}>
