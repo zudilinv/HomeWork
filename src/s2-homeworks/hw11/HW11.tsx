@@ -3,8 +3,6 @@ import s from './HW11.module.css'
 import s2 from '../../s1-main/App.module.css'
 import { restoreState } from '../hw06/localStorage/localStorage'
 import SuperRange from "./common/c7-SuperRange/SuperRange"
-import {Slider, SliderProps} from "@mui/material";
-
 
 /*
 * 1 - передать значения в оба слайдера
@@ -19,17 +17,10 @@ function HW11() {
 
     const change = (event: Event, value: number | number[]) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
-        const valueBetween = 10
-        if (Array.isArray(value)){
-            if (value[0] < value[1]) {
-                setValue1(value[0])
-                setValue2(value[1])
-            }else {
-                setValue1(value[0] - 10)
-                setValue2(value[0] + 10)
-            }
-        }
-        else {
+        if (Array.isArray(value)) {
+            setValue1(value[0])
+            setValue2(value[1])
+        }else {
             setValue1(value)
         }
     }
