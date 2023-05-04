@@ -1,18 +1,14 @@
 .container {
     margin: 40px;
     width: 300px;
-
 }
 
 .wrapper {
     padding: 20px;
     display: flex;
-    width: 240px;
+    width: auto;
 }
-.wrapper2 {
-    padding: 20px;
-    display: flex;
-}
+
 
 .number {
     margin: 5px 15px;
