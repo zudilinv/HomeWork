@@ -49,5 +49,4 @@ const HW12 = () => {
         </div>
     )
 }
-
 export default HW12
